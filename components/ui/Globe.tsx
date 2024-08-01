@@ -78,11 +78,11 @@ export function Globe({ globeConfig, data }: WorldProps) {
     pointSize: 1,
     atmosphereColor: "#ffffff",
     showAtmosphere: true,
-    atmosphereAltitude: 0.1,
+    atmosphereAltitude: 0.4,
     polygonColor: "rgba(255,255,255,0.7)",
     globeColor: "#1d072e",
     emissive: "#000000",
-    emissiveIntensity: 0.1,
+    emissiveIntensity: 1,
     shininess: 0.9,
     arcTime: 2000,
     arcLength: 0.9,
@@ -109,7 +109,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
     };
     globeMaterial.color = new Color(globeConfig.globeColor);
     globeMaterial.emissive = new Color(globeConfig.emissive);
-    globeMaterial.emissiveIntensity = globeConfig.emissiveIntensity || 0.1;
+    globeMaterial.emissiveIntensity = globeConfig.emissiveIntensity || 0.7;
     globeMaterial.shininess = globeConfig.shininess || 0.9;
   };
 
